@@ -32,5 +32,5 @@ services:
       - SMTP_PASS= # the password for the mail server
       # - STARTTLS_ONOFF=off # defaults to on (uncomment if using port 465)
       # - TLS_ONOFF=off # defaults to on
-
+      # - SMTP_EHLO_NAME=hostname.lcl # defaults to localhost
 ```
