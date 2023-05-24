@@ -11,4 +11,5 @@ RUN apk add --update --no-cache msmtp \
 	&& chmod +x /bin/msmtpsendpw.sh
 
 ENV TLS_ONOFF=on \ 
-	STARTTLS_ONOFF=on 
+	STARTTLS_ONOFF=on \
+	SMTP_EHLO_NAME=localhost
