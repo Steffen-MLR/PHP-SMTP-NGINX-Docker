@@ -8,5 +8,6 @@ cat - | /usr/bin/msmtp \
 	--auth=on \
 	--auto-from=on \
 	--user=$SMTP_USER \
+	--domain=$SMTP_EHLO_NAME \
 	--passwordeval=/bin/msmtpsendpw.sh \
 	"$@"
